@@ -4,6 +4,26 @@ Interacting with **Malicious** file may cause many problems in your server/syste
 The FXOR can help you `write` and `read` files byte by byte changing data
 with XOR operator and provided as a IO Base class.
 
+## Know More About FXOR
+To use fxor you need to understand basic of it. first of all you need some arguments :
+> 1. An integer key in range(0, 256)
+> 2. Path to a file
+> 3. File open mode `w` for write mode or `r` read mode
+> 4. Fast mode for `True` or `False` which effects writing speed and memory usage
+> 5. File real name or even None
+
+Now let's see what does each one of these arguments do:
+- key is used for XOR operation and you need same key for reading a file XORed with that key.
+- Path to a file or XORed file in read mode
+- Open mode
+- Fast mode which can use more RAM if you set it to `True`
+- File name if you need to use.
+
+<br>
+
+---
+
+<br>
 
 ## Usage :
 ### Import into your project :
@@ -38,5 +58,10 @@ python3 fxor.py "1.jpg" "2.enc" 8 "w"
 ```shell
 python3 fxor.py "2.enc" "2.jpg" 8 "r"
 ```
+Here is the arguments we passed :
+1. File name to open
+2. File name to write to
+3. The key
+4. File open mode
 
-
+#### Feel free to contribute...
