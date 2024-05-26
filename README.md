@@ -8,7 +8,7 @@ with XOR operator and provided as a IO Base class.
 To use fxor you need to understand basic of it. first of all you need some arguments :
 > 1. An integer key in range(0, 256)
 > 2. Path to a file
-> 3. File open mode `w` for write mode or `r` read mode
+> 3. File open mode `w` for write mode or `r` for read mode
 > 4. Fast mode for `True` or `False` which effects writing speed and memory usage
 > 5. File real name or even None
 
